@@ -50,7 +50,7 @@ class QuizApp {
         const question = questions[this.currentQuestionIndex];
 
         // Update question counter and progress bar
-        this.questionCounter.textContent = `Question ${this.currentQuestionIndex + 1} of ${questions.length}`;
+        this.questionCounter.textContent = `Frage ${this.currentQuestionIndex + 1} von ${questions.length}`;
         this.progressFill.style.width = `${((this.currentQuestionIndex + 1) / questions.length) * 100}%`;
 
         // Update question text
@@ -110,7 +110,7 @@ class QuizApp {
         const percentage = Math.round((this.score / questions.length) * 100);
 
         this.scorePercentage.textContent = `${percentage}%`;
-        this.scoreText.textContent = `You got ${this.score} out of ${questions.length} questions correct!`;
+        this.scoreText.textContent = `Du hast ${this.score} von ${questions.length} Fragen richtig!`;
 
         // Generate detailed results
         this.resultsDetails.innerHTML = '';
@@ -127,11 +127,11 @@ class QuizApp {
                     ${index + 1}. ${question.question}
                 </div>
                 <div class="result-item-answer your-answer">
-                    <strong>Your answer:</strong> ${question.answers[userAnswer]}
+                    <strong>Deine Antwort:</strong> ${question.answers[userAnswer]}
                 </div>
                 ${!isCorrect ? `
                     <div class="result-item-answer">
-                        <strong>Correct answer:</strong> ${question.answers[question.correctAnswer]}
+                        <strong>Richtige Antwort:</strong> ${question.answers[question.correctAnswer]}
                     </div>
                 ` : ''}
             `;
