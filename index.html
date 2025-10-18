@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuraQuiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="quiz-container">
+            <div id="start-screen" class="screen active">
+                <h1>JuraQuiz</h1>
+                <p>Test your knowledge with this interactive quiz!</p>
+                <button id="start-btn" class="btn btn-primary">Start Quiz</button>
+            </div>
+
+            <div id="quiz-screen" class="screen">
+                <div class="quiz-header">
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                    <p id="question-counter" class="question-counter">Question 1 of 10</p>
+                </div>
+
+                <div class="quiz-content">
+                    <h2 id="question-text" class="question-text">Question text will appear here</h2>
+                    <div id="answers-container" class="answers-container">
+                        <!-- Answer buttons will be generated here -->
+                    </div>
+                </div>
+
+                <div class="quiz-footer">
+                    <button id="next-btn" class="btn btn-primary" style="display: none;">Next Question</button>
+                </div>
+            </div>
+
+            <div id="results-screen" class="screen">
+                <h1>Quiz Complete!</h1>
+                <div class="results-summary">
+                    <div class="score-circle">
+                        <span id="score-percentage" class="score-percentage">0%</span>
+                    </div>
+                    <p id="score-text" class="score-text">You got 0 out of 0 questions correct!</p>
+                </div>
+
+                <div id="results-details" class="results-details">
+                    <!-- Detailed results will be shown here -->
+                </div>
+
+                <button id="restart-btn" class="btn btn-primary">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
