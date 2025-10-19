@@ -84,6 +84,19 @@ body {
     margin-bottom: 30px;
 }
 
+.question-category {
+    display: inline-block;
+    background: linear-gradient(135deg, #3cace4 0%, #415ae8 100%);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 .question-text {
     font-size: 1.5rem;
     color: #333;
@@ -117,6 +130,12 @@ body {
 .answer-btn.selected {
     border-color: #667eea;
     background: #f0f4ff;
+    font-weight: 600;
+}
+
+.answer-btn.selected::before {
+    content: '✓ ';
+    margin-right: 8px;
 }
 
 .answer-btn.correct {
@@ -137,6 +156,10 @@ body {
 
 .quiz-footer {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
 /* Buttons */
