@@ -394,5 +394,16 @@ const questions = [
             "Leitender Oberstaatsanwalt"
         ],
         correctAnswers: [3]
+    },
+    {
+        category: "Die Justiz in Regensburg",
+        question: "Wie viele Personen arbeiten in den Justizgebäuden am Dörnbergpark in Regensburg?",
+        answers: [
+            "50-100",
+            "350-400",
+            "500-550",
+            "700-750"
+        ],
+        correctAnswers: [2]
     }
 ];
